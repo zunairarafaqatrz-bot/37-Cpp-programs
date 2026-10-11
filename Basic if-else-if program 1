@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int cost, selling;
+
+    cout << "Enter cost price: ";
+    cin >> cost;
+
+    cout << "Enter selling price: ";
+    cin >> selling;
+
+    if (selling > cost)
+    {
+        cout << "Profit";
+    }
+    else if (selling < cost)
+    {
+        cout << "Loss";
+    }
+    else
+    {
+        cout << "No Profit No Loss";
+    }
+
+    return 0;
+}
