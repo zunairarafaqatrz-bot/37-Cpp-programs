@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int signal;
+
+    cout << "1. Red";
+    cout << "\n2. Yellow";
+    cout << "\n3. Green";
+    cout << "\nEnter choice: ";
+    cin >> signal;
+
+    switch (signal)
+    {
+        case 1:
+            cout << "Stop";
+            break;
+
+        case 2:
+            cout << "Wait";
+            break;
+
+        case 3:
+            cout << "Go";
+            break;
+
+        default:
+            cout << "Invalid Signal";
+    }
+
+    return 0;
+}
