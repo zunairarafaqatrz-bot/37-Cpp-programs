@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int amount;
+    int age;
+
+    cout << "Enter shopping amount: ";
+    cin >> amount;
+
+    cout << "Enter age: ";
+    cin >> age;
+
+    if (amount >= 5000)
+    {
+        if (age >= 18)
+        {
+            cout << "You Get 20% Discount";
+        }
+        else
+        {
+            cout << "You Get 10% Discount";
+        }
+    }
+    else
+    {
+        cout << "No Discount";
+    }
+
+    return 0;
+}
