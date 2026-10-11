@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int choice;
+    float length, width;
+
+    cout << "1. Rectangle";
+    cout << "\n2. Square";
+    cout << "\nEnter choice: ";
+    cin >> choice;
+
+    switch (choice)
+    {
+        case 1:
+            cout << "Enter length and width: ";
+            cin >> length >> width;
+            cout << "Area = " << length * width;
+            break;
+
+        case 2:
+            cout << "Enter side: ";
+            cin >> length;
+            cout << "Area = " << length * length;
+            break;
+
+        default:
+            cout << "Invalid Choice";
+    }
+
+    return 0;
+}
