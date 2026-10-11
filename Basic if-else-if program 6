@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int units;
+    cout << "Enter electricity units: ";
+    cin >> units;
+
+    if (units <= 100)
+    {
+        cout << "Bill = " << units * 5;
+    }
+    else if (units <= 200)
+    {
+        cout << "Bill = " << units * 10;
+    }
+    else
+    {
+        cout << "Bill = " << units * 15;
+    }
+
+    return 0;
+}
